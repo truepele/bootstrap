@@ -63,11 +63,17 @@
             $('#example').DataTable({
                 "processing": true,
                 "serverSide": true,
-                "ajax": '@Url.Action("GetData", "TableData")'
+                "ajax": '@Url.Action("GetData", "TableData")',
+                "search": {
+                    "regex": true
+                }
             });
 
             $('#table2').DataTable({                
-                "ajax": '@Url.Action("GetDataAll", "TableData")'
+                "ajax": '@Url.Action("GetDataAll", "TableData")',
+                "search": {
+                    "regex": true
+                }
             });
 
         });
