@@ -29,7 +29,7 @@ namespace bootstrap.Services
         {
             var dataList = new List<string[]>();
 
-            for (var i = 0; i < start + length && i < totalrecords; i++)
+            for (var i = start; i < start + length && i < totalrecords; i++)
             {
                 dataList.Add(new string[] { $"FirstName_{i}", $"LastName_{i}", $"Position_{i}", "", "", "" });
             }
